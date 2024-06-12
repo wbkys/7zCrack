@@ -3,7 +3,7 @@ A combination method for cracking 7zip package passwords using PowerShell on Win
 
 
 powershell code:
-
+``
 $7zPath = "C:\Program Files\7-Zip\7z.exe"
 $compressedFile = "xxxxxxxxxx.7z"
 Get-Content -Path pass.txt | ForEach-Object {
@@ -13,3 +13,4 @@ Get-Content -Path pass.txt | ForEach-Object {
         Write-Output "Success! Password is: $password"
     }
 }
+``
